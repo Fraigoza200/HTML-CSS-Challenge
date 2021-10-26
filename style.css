@@ -1,31 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Red Hat Display',
-        sans-serif;
-    min-height: 100vh;
-    background-image: url(https://www.digitshack.com/codepen/mentor1/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: hsl(225, 100%, 94%);
-    position: relative;
-    font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+  min-height: 100vh;
+  background-image: url(https://www.digitshack.com/codepen/mentor1/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 450px;
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
+  position: absolute;
+  max-width: 450px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
 }
+.text-content {
+  height: 500px;
+  text-align: center;
+}
+.title {
+  padding: 25px 0;
+  font-family: 'Red Hat Display';
+  font-weight: 900;
+  font-size: 35px;
+}
+.subtitle {
+  text-align: center;
+  padding: 10px 50px;
+  font-family: 'Red Hat Display';
+  font-weight: 500;
+  font-size: 16px;
+}
+.plan-box {
+  height: 90px;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  margin: 25px 15px;
+  border-radius: 20px;
+}
+.plan-box > a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  padding-right: 20px;
+}
+.plan-box-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  padding-left: 30px;
+}
+.plan-box-left > h5 {
+  font-family: 'Red Hat Display';
+  font-size: 100px;
+  color: #000;
+  font-weight: bold;
+}
+.plan-box-left > a {
+  color: #0000ff;
+}
+.proceed {
+  padding: 15px 0;
+  margin: 20px 15px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0px 9px 15px 5px #CDCCFF;
+}
+.proceed-btn {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Red Hat Display';
+}
+.cancel {
+  margin-top: 50px;
 
+}
+.cancel-btn {
+  text-decoration: none;
+  font-family: 'Red Hat Display';
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
